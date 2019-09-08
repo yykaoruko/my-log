@@ -1,0 +1,14 @@
+{
+  "name": "my-log",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/yykaoruko/my-log.git",
+  "author": "yykaoruko",
+  "license": "MIT",
+  "scripts": {
+    "gen:l": "hygen init log"
+  },
+  "devDependencies": {
+    "hygen": "^4.0.9"
+  }
+}
