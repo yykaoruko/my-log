@@ -12,4 +12,4 @@ jobs:
     - name: dispatch repository
       env:
         MY_TOKEN: ${{ secrets.MY_TOKEN }}
-      run: ./dispath.sh
+      run: ./dispatch.sh
