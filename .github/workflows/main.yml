@@ -11,5 +11,5 @@ jobs:
     steps:
     - name: dispatch repository
       env:
-        GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
-      run: curl -X POST -H "Authorization: token ${secrets.MY_TOKEN}" -H "Accept: application/vnd.github.everest-preview+json" -d '{"event_type": "log-updated"}' -i https://api.github.com/repos/yykaoruko/rukolog/dispatches
+        MY_TOKEN: ${{ secrets.MY_TOKEN }}
+      run: curl -X POST -H "Authorization: token $MY_TOKEN" -H "Accept: application/vnd.github.everest-preview+json" -d '{"event_type": "log-updated"}' -i https://api.github.com/repos/yykaoruko/rukolog/dispatches
