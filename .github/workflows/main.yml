@@ -13,4 +13,8 @@ jobs:
       env:
         MY_TOKEN: ${{ secrets.MY_TOKEN }}
         MY_URL: ${{secrets.MY_URL}}
-      run: curl -X POST ${MY_URL}
+      run: curl -X POST \
+            -H "Authorization: token ${GITHUB_TOKEN}" \
+            -H "Accept: application/vnd.github.everest-preview+json" \
+            -d "{\"event_type\": \"dispath\"}" \
+            ${URL}
