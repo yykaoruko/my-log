@@ -13,4 +13,4 @@ jobs:
       env:
         MY_TOKEN: ${{ secrets.MY_TOKEN }}
         MY_URL: ${{secrets.MY_URL}}
-      run: echo "$MY_URL"
+      run: curl -X POST ${MY_URL}
