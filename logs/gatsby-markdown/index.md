@@ -1,6 +1,6 @@
 ---
 title: GatsbyJS と Markdown でブログを作りました
-description: 
+description: 最近携わったプロジェクトでGridsomeを触ることがあり、とても手軽にブログが作れて楽しかったので、自分のブログも作ってみました。
 tags:
   - GatsbyJS
   - Markdown
