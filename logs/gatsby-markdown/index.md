@@ -1,6 +1,6 @@
 ---
 title: GatsbyJS と Markdown でブログを作りました
-description: 最近携わったプロジェクトでGridsomeを触ることがあり、とても手軽にブログが作れて楽しかったので、自分のブログも作ってみました。
+description: 最近携わったプロジェクトでGridsomeを触ることがあり、とても手軽にブログが作れて楽しかったので、自分のブログも作ってみました。
 tags:
   - GatsbyJS
   - Markdown
@@ -9,8 +9,11 @@ date: 2020-03-12 00:00:00 UTC
 slug: gatsby-markdown
 ---
 
-最近携わったプロジェクトで [Gridsome](https://gridsome.org/) を触ることがあり、とても手軽にブログが作れて楽しかったので、自分のブログも作ってみました。（存在はしていたものの放置していました。更新したくなるよう、リニューアル大作戦です！）  
-使ったことのないフレームワークを試してみたかったので [GatsbyJS](https://www.gatsbyjs.org/) を選ぶことに。GatsbyJS は高速さを謳っているフレームワークで React がベースになっています。  
+最近携わったプロジェクトで [Gridsome](https://gridsome.org/) を触ることがあり、とても手軽にブログが作れて楽しかったので、自分のブログも作ってみました。  
+（存在はしていたものの放置していました。更新したくなるよう、リニューアル大作戦です！）  
+
+使ったことのないフレームワークを試してみたかったので [GatsbyJS](https://www.gatsbyjs.org/) を選ぶことに。  
+GatsbyJS は高速さを謳っているフレームワークで React がベースになっています。  
 その特徴のひとつに静的サイトジェネレーターがあり、速いサイトを作ることができます！  
 
 今回のブログで実装した機能と、実装のために利用したプラグインなどをまとめてみたいと思います。  
@@ -26,7 +29,7 @@ slug: gatsby-markdown
 
 `gatsby-source-filesystem` は色んなソースファイルを Gatsby のデータシステムに組み込む役割を担っていて、`gatsby-config.js` に以下のように記述すると、GraphQL からデータを扱えるようになります。
 
-```javascript:gatsby-config.js
+```javascript
 module.exports = {
   plugins: [
     {
@@ -47,7 +50,7 @@ Markdown ファイルのデータを Gatsby 内で扱えるようになりまし
 
 [gatsby-transformer-remark | GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
 
-```javascript:gatsby-config.js
+```javascript
 module.exports = {
   plugins: [
     `gatsby-transformer-remark`,
@@ -78,7 +81,7 @@ module.exports = {
 
 [gatsby-remark-autolink-headers | GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-remark-autolink-headers/)
 
-```javascript:gatsby-config.js
+```javascript
 module.exports = {
   plugins: [
     {
@@ -100,7 +103,7 @@ module.exports = {
 
 `gatsby-remark-prismjs` も `gatsby-transformer-remark` 内のオプションプラグインとして利用します。  
 
-```javascript:gatsby-config.js
+```javascript
 module.exports = {
   plugins: [
     {
@@ -128,4 +131,4 @@ module.exports = {
 GatsbyJS はたくさんプラグイン開発がされているので、とてもスピーディーに開発をすすめることができるのが、とても良い点だと思いました！現時点で1700以上のプラグインが存在するようです😳  
 ドキュメントもとにかく充実しています。  
 
-今後は、投稿の検索機能や、前後の投稿へのリンクを実装してみたいと思います。
+今後は、投稿の検索機能や、前後の投稿へのリンクを実装してみたいと思います。  
