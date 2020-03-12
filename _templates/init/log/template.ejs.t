@@ -1,7 +1,10 @@
 ---
-to: markdown/<%= date %>.md
+to: logs/<%= slug %>/index.md
 ---
 ---
-title: <%= filename %>
-created_at: <%= date %>
+title: 
+description: 
+tags: 
+date: 
+slug: <%= slug %>
 ---
