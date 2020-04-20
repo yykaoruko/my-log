@@ -7,4 +7,5 @@ description:
 tags: 
 date: 
 slug: <%= slug %>
+reference: 
 ---
