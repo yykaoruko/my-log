@@ -44,7 +44,7 @@ YAMAP では地図を表示する画面が多いです。
 > 本当はどっちもやるのがいいのだと思います。  
 > リアルユーザーモニタリングは実際の数値が見れるので、合成モニタリングと結果を比較することで、合成モニタリングの環境設定を見直すことができたり、ユーザーへのインパクトを知ることができそうです。  
 
- ## lighthouse-observer の構成
+## lighthouse-observer の構成
 
 ### 概要
 
@@ -58,7 +58,7 @@ lighthouse-observer は関数です。
 
 ### 詳細
 
-#### Cloud Scheduler と Cloud Pub/Sub と Cloud Functions
+#### Cloud Functions を定期実行する
 
 Cloud Scheduler と Cloud Pub/Sub を利用することで Cloud Functions を定期実行することができます。  
 
